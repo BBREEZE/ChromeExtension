@@ -1,0 +1,20 @@
+{
+    // 插件的名称
+    "name": "SNote",
+    // 插件的版本
+    "version": "1.0.0",
+    // 插件描述
+    "description": "一个随用随关的小型文本文档",
+    "permissions": ["tabs"],
+    "background": {
+      "scripts": ["js/background.js"],
+      "persistent": false
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "一个随用随关的小型文本文档"
+    }, 
+    // 清单文件的版本，这个必须写，而且必须是2
+    "manifest_version": 2
+}
